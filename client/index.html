@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Second Chance Shop</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Second Chance Shop</h1>
+    <p>Temukan pakaian bekas berkualitas & hemat</p>
+  </header>
+
+  <nav>
+    <a href="#" onclick="showSection('home')">Beranda</a>
+    <a href="#" onclick="showSection('store')">Store</a>
+    <a href="#" onclick="showSection('login')">Admin</a>
+  </nav>
+
+  <section id="home" class="section active">
+    <div style="text-align:center; padding:2rem;">
+      <h2>Selamat Datang di Second Chance!</h2>
+      <p>Baju bekas berkualitas, harga bersahabat. Temukan gayamu sekarang!</p>
+    </div>
+  </section>
+
+  <section id="store" class="section">
+    <div style="text-align:center; margin-bottom: 1rem;">
+      <button id="add-button" style="display:none" onclick="showAddForm()">+ Tambah Produk Baru</button>
+    </div>
+    <div id="add-form" style="display:none; text-align:center; margin-bottom:1rem;">
+      <input type="text" id="new-name" placeholder="Nama Produk" />
+      <input type="number" id="new-price" placeholder="Harga" />
+      <input type="text" id="new-desc" placeholder="Deskripsi" />
+      <input type="file" id="new-image" />
+      <button onclick="addProduct()">Simpan Produk</button>
+    </div>
+    <section class="products-container" id="product-list"></section>
+  </section>
+
+  <section id="login" class="section" style="text-align:center; padding:2rem;">
+    <h2>Login Admin</h2>
+    <input type="text" id="username" placeholder="Username" />
+    <input type="password" id="password" placeholder="Password" />
+    <button onclick="adminLogin()">Login</button>
+    <p id="login-msg" style="color:red;"></p>
+  </section>
+
+  <footer>
+    <p>Hubungi kami via WhatsApp: <a href="https://wa.me/6289602775518">0896-0277-5518</a></p>
+    <div class="social-links">
+      <p>Follow Instagram kami: <a href="https://instagram.com/thania_thszz" target="_blank">@thania_thszz</a></p>
+    </div>
+    <p>&copy; 2025 Second Chance Shop. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

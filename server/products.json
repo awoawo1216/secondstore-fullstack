@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "name": "Kemeja Flanel",
+    "price": 45000,
+    "desc": "Nyaman dan cocok untuk acara santai.",
+    "image": "default1.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Hoodie Abu",
+    "price": 65000,
+    "desc": "Hangat dan stylish.",
+    "image": "default2.jpg"
+  }
+]
